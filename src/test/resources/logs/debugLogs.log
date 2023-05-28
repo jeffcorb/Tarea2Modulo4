@@ -1,6 +1,2 @@
-16:08:10.503 DEBUG Tarea2Modulo4 - Getting Pokemons
-16:08:10.508 DEBUG Tarea2Modulo4 - Reading Pokemon List from excel
-16:08:10.715 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-16:08:11.081 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-16:08:11.895 DEBUG org.apache.poi.openxml4j.opc.OPCPackage - The close() method is intended to SAVE a package. This package is open in READ ONLY mode, use the revert() method instead!
-16:08:11.895 INFO  Tarea2Modulo4 - Voltorb
+00:10:27.926 INFO  Tarea2Modulo4 - SetUp Master
+00:10:28.151 INFO  Tarea2Modulo4 - teardown Master

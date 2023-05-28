@@ -3,6 +3,7 @@ package model;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
+import java.util.Map;
 
 public class Persona {
     @JsonProperty("name")
@@ -27,7 +28,10 @@ public class Persona {
     private List<String> favoriteMeals;
 
     @JsonProperty("amigos")
-    private List<String> amigos;
+    private List<Amigos> listaAmigos;
+
+    @JsonProperty("trabajos")
+    private Map<String, Trabajo> trabajos;
 
     public String getName() {
         return name;
@@ -57,7 +61,11 @@ public class Persona {
         return favoriteMeals;
     }
 
-    public List<String> getAmigos() {
-        return amigos;
+    public List<Amigos> getAmigos() {
+        return listaAmigos;
+    }
+
+    public Map<String, Trabajo> getTrabajos() {
+        return trabajos;
     }
 }

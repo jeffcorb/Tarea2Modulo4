@@ -10,7 +10,7 @@ public class Pokemon {
     @ExcelCellName("NOMBRE")
     private String nombre;
     @ExcelCellName("NOMBRE JAPONES")
-    private int nombreJapones;
+    private String nombreJapones;
     @ExcelCellName("ATK")
     private int atk;
     @ExcelCellName("DEF")
@@ -34,7 +34,7 @@ public class Pokemon {
         return nombre;
     }
 
-    public int getNombreJapones() {
+    public String getNombreJapones() {
         return nombreJapones;
     }
 
