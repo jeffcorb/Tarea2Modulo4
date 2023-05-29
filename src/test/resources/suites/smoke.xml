@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite" verbose="2" time-out="60000">
+    <groups>
+        <run>
+            <include name="smoke"/>
+        </run>
+    </groups>
+
+    <test name="personas">
+        <packages>
+            <package name="testmvn.personas"/>
+        </packages>
+    </test>
+
+    <test name="pokemon">
+        <packages>
+            <package name="testmvn.pokemon"/>
+        </packages>
+    </test>
+</suite>
