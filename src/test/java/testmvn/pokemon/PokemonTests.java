@@ -1,4 +1,4 @@
-package testmvn;
+package testmvn.pokemon;
 
 import base.BaseTest;
 import clases.PokemonListas;

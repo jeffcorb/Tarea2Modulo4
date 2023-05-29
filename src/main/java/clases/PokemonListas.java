@@ -5,16 +5,15 @@ import model.Pokemon;
 
 public class PokemonListas {
     public static Pokemon[] listaPokemon() {
-        final var listaAleatoria = new Pokemon[151];
+        final var listaPokemon = new Pokemon[151];
         for (var i = 1; i < 152; i++) {
-            var dataGiver = DataGiver.getByID(i);
-            listaAleatoria[i - 1] = dataGiver;
+            var pokemon = DataGiver.getByID(i);
+            listaPokemon[i - 1] = pokemon;
         }
-        return listaAleatoria;
+        return listaPokemon;
     }
 
     public static Pokemon[] bubbleSortPokemon(Pokemon[] listaPokemon) {
-
         for (var i = 0; i < 150; i++) {
             var swapped = false;
 
@@ -29,7 +28,6 @@ public class PokemonListas {
             }
         }
         return listaPokemon;
-
     }
 
     public static Pokemon[] bubbleSortAtaque(Pokemon[] listaPokemon) {
@@ -39,7 +37,7 @@ public class PokemonListas {
 
             for (var j = 0; j < 151 - i - 1; j++) {
                 if (listaPokemon[j].getAtk() < listaPokemon[j + 1].getAtk()) {
-                    Pokemon temp = listaPokemon[j];
+                    final var temp = listaPokemon[j];
                     listaPokemon[j] = listaPokemon[j + 1];
                     listaPokemon[j + 1] = temp;
                     swapped = true;
@@ -55,7 +53,6 @@ public class PokemonListas {
             if (listaPokemon[i].isAtrapado() == false) {
                 pokemonesNoatrapados++;
             }
-
         }
         return pokemonesNoatrapados;
     }

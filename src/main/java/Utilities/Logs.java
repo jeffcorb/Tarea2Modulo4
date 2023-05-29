@@ -6,7 +6,7 @@ import org.apache.logging.log4j.Logger;
 import java.util.Formatter;
 
 public class Logs {
-    private final static Logger log = LogManager.getLogger("Tarea2Modulo4");
+    private final static Logger log = LogManager.getLogger("AUTOMATION");
 
     public static void debug(String message) {
         log.debug(message);

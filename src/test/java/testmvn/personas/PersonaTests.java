@@ -1,4 +1,4 @@
-package testmvn;
+package testmvn.personas;
 
 import base.BaseTest;
 import data.JsonReader;
