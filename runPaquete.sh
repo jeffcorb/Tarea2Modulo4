@@ -1,2 +1,1 @@
-./mvnw clean
-./mvnw test -Dtest="testmvn"
+./mvnw clean test -Dtest="testmvn.**"
