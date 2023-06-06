@@ -6,6 +6,10 @@
             <include name="regression"/>
         </run>
     </groups>
+    <listeners>
+        <listener class-name="listeners.TestListeners"></listener>
+        <listener class-name="listeners.SuiteListeners"></listener>
+    </listeners>
 
     <test name="personas">
         <packages>
